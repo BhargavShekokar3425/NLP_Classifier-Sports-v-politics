@@ -1,0 +1,57 @@
+=== Sport vs Politics Classification Log ===
+timestamp=2026-02-15T21:15:41
+---
+
+[BoW + NaiveBayes] timestamp=2026-02-15T21:15:46
+train_accuracy=0.990909
+test_accuracy=0.821429
+  POLITICS: P=1.0000  R=0.6667  F1=0.8000
+  SPORT: P=0.7222  R=1.0000  F1=0.8387
+
+[BoW + LogisticRegression] timestamp=2026-02-15T21:15:46
+train_accuracy=0.990909
+test_accuracy=0.857143
+  POLITICS: P=0.8235  R=0.9333  F1=0.8750
+  SPORT: P=0.9091  R=0.7692  F1=0.8333
+
+[BoW + KNN] timestamp=2026-02-15T21:15:46
+train_accuracy=0.690909
+test_accuracy=0.642857
+  POLITICS: P=0.6000  R=1.0000  F1=0.7500
+  SPORT: P=1.0000  R=0.2308  F1=0.3750
+
+[TF-IDF + NaiveBayes] timestamp=2026-02-15T21:15:46
+train_accuracy=0.990909
+test_accuracy=0.821429
+  POLITICS: P=1.0000  R=0.6667  F1=0.8000
+  SPORT: P=0.7222  R=1.0000  F1=0.8387
+
+[TF-IDF + LogisticRegression] timestamp=2026-02-15T21:15:46
+train_accuracy=1.000000
+test_accuracy=0.892857
+  POLITICS: P=1.0000  R=0.8000  F1=0.8889
+  SPORT: P=0.8125  R=1.0000  F1=0.8966
+
+[TF-IDF + KNN] timestamp=2026-02-15T21:15:46
+train_accuracy=0.954545
+test_accuracy=0.892857
+  POLITICS: P=0.9286  R=0.8667  F1=0.8966
+  SPORT: P=0.8571  R=0.9231  F1=0.8889
+
+[Bigram + NaiveBayes] timestamp=2026-02-15T21:15:46
+train_accuracy=0.863636
+test_accuracy=0.607143
+  POLITICS: P=0.8333  R=0.3333  F1=0.4762
+  SPORT: P=0.5455  R=0.9231  F1=0.6857
+
+[Bigram + LogisticRegression] timestamp=2026-02-15T21:15:46
+train_accuracy=0.936364
+test_accuracy=0.642857
+  POLITICS: P=0.6000  R=1.0000  F1=0.7500
+  SPORT: P=1.0000  R=0.2308  F1=0.3750
+
+[Bigram + KNN] timestamp=2026-02-15T21:15:46
+train_accuracy=0.618182
+test_accuracy=0.607143
+  POLITICS: P=0.5769  R=1.0000  F1=0.7317
+  SPORT: P=1.0000  R=0.1538  F1=0.2667

@@ -1,0 +1,31 @@
+=== Interactive Classifier Log ===
+started=2026-02-15T21:44:04
+---
+models_trained=9
+  BoW+NaiveBayes  test_acc=0.821429
+  BoW+LogisticRegression  test_acc=0.857143
+  BoW+KNN  test_acc=0.642857
+  TF-IDF+NaiveBayes  test_acc=0.821429
+  TF-IDF+LogisticRegression  test_acc=0.892857
+  TF-IDF+KNN  test_acc=0.892857
+  Bigram+NaiveBayes  test_acc=0.607143
+  Bigram+LogisticRegression  test_acc=0.642857
+  Bigram+KNN  test_acc=0.607143
+
+[PREDICTION] timestamp=2026-02-15T21:44:21
+  sentence = narendra modi is the best PM of this counrty so far
+   1. TF-IDF   + KNN                   → POLITICS    conf=0.800000  P(POL)=0.800000  P(SPO)=0.200000  test_acc=0.8929
+   2. Bigram   + KNN                   → POLITICS    conf=0.800000  P(POL)=0.800000  P(SPO)=0.200000  test_acc=0.6071
+   3. BoW      + KNN                   → POLITICS    conf=0.600000  P(POL)=0.600000  P(SPO)=0.400000  test_acc=0.6429
+   4. BoW      + LogisticRegression    → POLITICS    conf=0.559701  P(POL)=0.559701  P(SPO)=0.440299  test_acc=0.8571
+   5. Bigram   + LogisticRegression    → POLITICS    conf=0.509913  P(POL)=0.509913  P(SPO)=0.490087  test_acc=0.6429
+   6. BoW      + NaiveBayes            → SPORT       conf=0.509091  P(POL)=0.490909  P(SPO)=0.509091  test_acc=0.8214
+   7. TF-IDF   + NaiveBayes            → SPORT       conf=0.509091  P(POL)=0.490909  P(SPO)=0.509091  test_acc=0.8214
+   8. Bigram   + NaiveBayes            → SPORT       conf=0.509091  P(POL)=0.490909  P(SPO)=0.509091  test_acc=0.6071
+   9. TF-IDF   + LogisticRegression    → POLITICS    conf=0.501706  P(POL)=0.501706  P(SPO)=0.498294  test_acc=0.8929
+  majority_vote = POLITICS  (6/9)
+  best_model    = TF-IDF+KNN  conf=0.800000
+
+[SESSION_END] timestamp=2026-02-15T21:44:33
+total_predictions=1
+  1. majority=POLITICS  best=TF-IDF+KNN  conf=0.8000  sentence=narendra modi is the best PM of this counrty so far
